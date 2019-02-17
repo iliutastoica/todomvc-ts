@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { TodoModel } from '../models/TodoModel';
 import TodoTextInput from './TodoTextInput';
@@ -17,13 +16,6 @@ interface TodoItemState {
 }
 
 export default class TodoItem extends Component<TodoItemProps, TodoItemState> {
-  static propTypes = {
-    todo: PropTypes.object.isRequired,
-    editTodo: PropTypes.func.isRequired,
-    deleteTodo: PropTypes.func.isRequired,
-    completeTodo: PropTypes.func.isRequired,
-  };
-
   state: TodoItemState = {
     editing: false,
   };

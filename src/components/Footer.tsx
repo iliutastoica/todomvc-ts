@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import FilterLink from '../containers/FilterLink';
 import { TodoFilter } from '../constants/TodoFilters';
 
@@ -44,12 +43,6 @@ const Footer = (props: AppProps) => {
       }
     </footer>
   );
-};
-
-Footer.propTypes = {
-  completedCount: PropTypes.number.isRequired,
-  activeCount: PropTypes.number.isRequired,
-  onClearCompleted: PropTypes.func.isRequired,
 };
 
 export default Footer;
