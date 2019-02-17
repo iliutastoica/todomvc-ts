@@ -12,14 +12,15 @@ interface TodoListProps {
 
 const TodoList = ({ filteredTodos, deleteTodo, editTodo, completeTodo }: TodoListProps) => (
   <ul className="todo-list">
-    {filteredTodos.map((todo: TodoModel) =>
-      <TodoItem
-        key={todo.id}
-        todo={todo}
-        deleteTodo={deleteTodo}
-        editTodo={editTodo}
-        completeTodo={completeTodo}
-      />,
+    {filteredTodos.map((todo: TodoModel) => (
+        <TodoItem
+          key={todo.id}
+          todo={todo}
+          deleteTodo={deleteTodo}
+          editTodo={editTodo}
+          completeTodo={completeTodo}
+        />
+      ),
     )}
   </ul>
 );
