@@ -11,8 +11,8 @@ interface MainSectionStateProps {
 }
 
 interface MainSectionActionProps {
-  completeAllTodos(): void;
-  clearCompleted(): void;
+  completeAllTodos: typeof completeAllTodos;
+  clearCompleted: typeof clearCompleted;
 }
 
 const mapStateToProps = (state: AppState): MainSectionStateProps => ({

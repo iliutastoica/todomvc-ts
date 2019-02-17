@@ -18,6 +18,7 @@ interface AppProps {
 const Footer = (props: AppProps) => {
   const { activeCount, completedCount, onClearCompleted } = props;
   const itemWord = activeCount === 1 ? 'item' : 'items';
+
   return (
     <footer className="footer">
       <span className="todo-count">

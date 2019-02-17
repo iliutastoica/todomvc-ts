@@ -4,7 +4,7 @@ import { addTodo } from '../actions';
 import { ComponentClass } from 'react';
 
 interface HeaderActionProps {
-  addTodo(text: string): void;
+  addTodo: typeof addTodo;
 }
 
 const HeaderContainer: ComponentClass<{}> = connect<null, HeaderActionProps>(
