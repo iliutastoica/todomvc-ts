@@ -7,9 +7,14 @@
     "@types/node": "11.9.4",
     "@types/react": "16.8.3",
     "@types/react-dom": "16.8.1",
+    "classnames": "^2.2.6",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
     "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
+    "reselect": "^4.0.0",
+    "todomvc-app-css": "^2.1.1",
     "typescript": "3.3.3"
   },
   "scripts": {
@@ -26,5 +31,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/classnames": "^2.2.7",
+    "@types/react-redux": "^7.0.1",
+    "@types/redux": "^3.6.0",
+    "@types/reselect": "^2.2.0"
+  }
 }
