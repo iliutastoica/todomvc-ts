@@ -14,9 +14,9 @@ interface VisibleTodoListStateProps {
 }
 
 interface VisibleTodoListActionProps {
-  deleteTodo: typeof deleteTodo,
-  editTodo: typeof editTodo,
-  completeTodo: typeof completeTodo,
+  deleteTodo(id: number): void;
+  editTodo(id: number, text: string): void;
+  completeTodo(id: number): void;
 }
 
 const mapStateToProps = (state: AppState): VisibleTodoListStateProps => ({
