@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header = ({ addTodo }: HeaderProps) => (
   <header className="header">
-    <h1>todos</h1>
+    <h1>todos TS</h1>
     <TodoTextInput
       newTodo
       onSave={(text: string): void => {
