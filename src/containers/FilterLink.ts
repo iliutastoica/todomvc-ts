@@ -3,12 +3,12 @@ import { setVisibilityFilter } from '../actions';
 import Link from '../components/Link';
 import { AppState } from '../reducers';
 import { TodoFilter } from '../constants/TodoFilters';
-import { ComponentClass } from 'react';
+import { ComponentClass, ReactNode } from 'react';
 import { Dispatch } from 'redux';
 
 interface FilterLinkPublicProps {
   filter: TodoFilter;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 interface FilterLinkStateProps {
@@ -19,7 +19,10 @@ interface FilterLinkActionProps {
   setFilter(): void;
 }
 
-const mapStateToProps = (state: AppState, ownProps: FilterLinkPublicProps): FilterLinkStateProps => ({
+const mapStateToProps = (
+  state: AppState,
+  ownProps: FilterLinkPublicProps,
+): FilterLinkStateProps => ({
   active: ownProps.filter === state.visibilityFilter,
 });
 
