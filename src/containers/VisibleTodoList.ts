@@ -23,7 +23,7 @@ const mapStateToProps = (state: AppState): VisibleTodoListStateProps => ({
   filteredTodos: getVisibleTodos(state),
 });
 
-const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
+const mapDispatchToProps = (dispatch: Dispatch): VisibleTodoListActionProps => bindActionCreators({
   deleteTodo,
   editTodo,
   completeTodo,
