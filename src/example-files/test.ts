@@ -22,14 +22,13 @@ function getFullName(person: Person): string {
 }
 
 class Citisen implements Person {
+  public signature: string;
+
   constructor(public id: number,
               public firstName: string,
               public lastName: string) {
+    this.signature = `${this.id} - ${getFullName(this)};`;
   }
-
-  getSignature(): string {
-    return `${this.id} - ${getFullName(this)};`
-  };
 }
 
 enum ActionType {
