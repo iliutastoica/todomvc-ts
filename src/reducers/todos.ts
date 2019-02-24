@@ -1,4 +1,4 @@
-import { ActionType } from '../constants/ActionTypes';
+import { ActionType } from '../constants/ActionType';
 import { Action } from 'redux';
 import { AddTodoAction, CompleteTodoAction, DeleteTodoAction, EditTodoAction } from '../actions';
 import { TodoModel } from '../models/TodoModel';

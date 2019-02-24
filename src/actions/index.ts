@@ -1,4 +1,4 @@
-import { ActionType } from '../constants/ActionTypes';
+import { ActionType } from '../constants/ActionType';
 import { Action } from 'redux';
 import { TodoFilter } from '../constants/TodoFilters';
 
