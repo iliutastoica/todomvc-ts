@@ -1,10 +1,11 @@
 import { combineReducers, Reducer } from 'redux';
-import todos, { TodosState } from './todos';
+import todos from './todos';
 import visibilityFilter from './visibilityFilter';
 import { TodoFilter } from '../constants/TodoFilters';
+import { TodoModel } from "../models/TodoModel";
 
 export interface AppState {
-  todos: TodosState;
+  todos: TodoModel[];
   visibilityFilter: TodoFilter;
 }
 

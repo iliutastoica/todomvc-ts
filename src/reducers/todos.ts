@@ -3,9 +3,7 @@ import { Action } from 'redux';
 import { AddTodoAction, CompleteTodoAction, DeleteTodoAction, EditTodoAction } from '../actions';
 import { TodoModel } from '../models/TodoModel';
 
-export type TodosState = TodoModel[];
-
-const initialState: TodosState = [
+const initialState: TodoModel[] = [
   {
     text: 'Use Redux',
     completed: false,
@@ -13,7 +11,10 @@ const initialState: TodosState = [
   },
 ];
 
-export default function todos(state: TodosState = initialState, action: Action<ActionType>): TodosState {
+export default function todos(
+  state: TodoModel[] = initialState,
+  action: Action<ActionType>,
+): TodoModel[] {
   switch (action.type) {
     case ActionType.AddTodo: {
       const { text } = action as AddTodoAction;
